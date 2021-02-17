@@ -1,6 +1,10 @@
 
 # build command
-docker build -t ssk-service:latest .
+docker build -t stk-service:latest .
 
 # run command
-docker run --name ssk -it ssk-ervice /bin/bash
+docker run -d --rm -p 5000:5000 --name stk-service stk-service:latest
+
+
+docker save stk-service:latest -o stk-service.tar
+docker load -i stk-service.tar
