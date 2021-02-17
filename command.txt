@@ -1,0 +1,6 @@
+
+# build command
+docker build -t ssk-service:latest .
+
+# run command
+docker run --name ssk -it ssk-ervice /bin/bash
