@@ -1,8 +1,5 @@
 FROM python:3.8-slim
 
-USER root
-RUN cd ${HOME}
-
 # set environments
 ENV PATH /usr/local/bin/python:$PATH
 ENV PATH /root/.local/bin:$PATH
