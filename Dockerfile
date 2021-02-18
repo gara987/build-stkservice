@@ -18,6 +18,6 @@ COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt --user --no-cache-dir 
 
 # run server 
-#COPY src/ .
-#ENTRYPOINT ["python", "server.py"]
-#EXPOSE 5000
+COPY src/ .
+ENTRYPOINT ["python", "server.py"]
+EXPOSE 5000
